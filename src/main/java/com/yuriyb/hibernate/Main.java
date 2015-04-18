@@ -35,6 +35,6 @@ public class Main {
 		t.commit();
 		session.close();
 		
-		System.out.println("The data has been saved into DB!");
+		System.out.println("The data has been saved into the DB!");
 	}
 }
