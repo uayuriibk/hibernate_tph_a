@@ -3,7 +3,7 @@ package com.yuriyb.hibernate;
 import javax.persistence.*;  
   
 @Entity  
-@Table(name = "employees_tpcc_a")  
+@Table(name = "employees_tph_a")  
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)  
 @DiscriminatorColumn(name="type",discriminatorType=DiscriminatorType.STRING)  
 @DiscriminatorValue(value="employee")  
