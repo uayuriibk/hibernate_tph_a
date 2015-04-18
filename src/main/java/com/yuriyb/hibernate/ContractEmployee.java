@@ -8,7 +8,7 @@ import javax.persistence.Entity;
 @DiscriminatorValue("contractemployee")
 public class ContractEmployee extends Employee {
 
-	@Column(name = "pay_per_hour")
+	@Column(name = "hourrate")
 	private float pay_per_hour;
 
 	@Column(name = "contract_duration")
