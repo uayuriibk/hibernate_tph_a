@@ -4,11 +4,13 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.AnnotationConfiguration;
 
-public class StoreData {
+public class Main {
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("deprecation")
 		AnnotationConfiguration cfg = new AnnotationConfiguration();
 		
+		@SuppressWarnings("deprecation")
 		Session session = cfg.configure("hibernate.cfg.xml").buildSessionFactory().openSession();
 
 		Transaction t = session.beginTransaction();
