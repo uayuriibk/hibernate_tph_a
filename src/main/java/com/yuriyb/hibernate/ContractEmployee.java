@@ -8,25 +8,25 @@ import javax.persistence.Entity;
 @DiscriminatorValue("contractemployee_tph_a")
 public class ContractEmployee extends Employee {
 
-	@Column(name = "hourrate")
-	private float pay_per_hour;
+	@Column(name = "hourlyrate")
+	private float hourlyPay;
 
 	@Column(name = "contract_duration")
-	private String contract_duration;
+	private String contractDuration;
 
-	public float getPay_per_hour() {
-		return pay_per_hour;
+	public float getHourlyPay() {
+		return hourlyPay;
 	}
 
-	public void setPay_per_hour(float pay_per_hour) {
-		this.pay_per_hour = pay_per_hour;
+	public void setHourlyPay(float hourlyPay) {
+		this.hourlyPay = hourlyPay;
 	}
 
-	public String getContract_duration() {
-		return contract_duration;
+	public String getContractDuration() {
+		return contractDuration;
 	}
 
-	public void setContract_duration(String contract_duration) {
-		this.contract_duration = contract_duration;
+	public void setContractDuration(String contractDuration) {
+		this.contractDuration = contractDuration;
 	}
 }

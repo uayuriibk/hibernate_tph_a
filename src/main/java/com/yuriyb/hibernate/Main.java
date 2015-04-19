@@ -25,8 +25,8 @@ public class Main {
 
 		ContractEmployee e3 = new ContractEmployee();
 		e3.setName("Artur Konandoyl");
-		e3.setPay_per_hour(1000);
-		e3.setContract_duration("12 hours");
+		e3.setHourlyPay(1000);
+		e3.setContractDuration("12 hours");
 
 		session.persist(e1);
 		session.persist(e2);
